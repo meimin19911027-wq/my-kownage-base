@@ -1,0 +1,11 @@
+{
+  "workspace_dir": "D:\\AI_Workspace\\agent_home",
+  "email": {
+    "smtp_host": "smtp.qiye.aliyun.com",
+    "smtp_port": 465,
+    "smtp_secure": true,
+    "sender": "你的企业邮箱地址",
+    "receiver": "接收邮箱地址",
+    "timeout": 30000
+  }
+}
