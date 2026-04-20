@@ -1,11 +1,23 @@
-{
-  "workspace_dir": "D:\\AI_Workspace\\agent_home",
-  "email": {
-    "smtp_host": "smtp.qiye.aliyun.com",
-    "smtp_port": 465,
-    "smtp_secure": true,
-    "sender": "你的企业邮箱地址",
-    "receiver": "接收邮箱地址",
-    "timeout": 30000
+  统一环境配置，包括 API 密钥、目录路径等。
+  {
+    "github": {
+      "api_token": "YOUR_GITHUB_TOKEN",
+      "repo": "username/repo",
+      "wiki_clone_path": "./wiki_data"
+    },
+    "gitlab": {
+      "api_token": "YOUR_GITLAB_TOKEN",
+      "project_id": "123456",
+      "wiki_clone_path": "./wiki_data"
+    },
+    "agent": {
+      "log_dir": "./agent_logs",
+      "auto_sync_interval": "24h",
+      "notify_slack_webhook": "https://hooks.slack.com/services/XXXXXX"
+    }
   }
-}
+  说明：
+  - 使用时替换 YOUR_*_TOKEN 等占位符。
+  - auto_sync_interval 支持格式：24h、30m。
+
+  ---
